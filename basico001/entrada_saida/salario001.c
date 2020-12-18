@@ -16,10 +16,15 @@ int main(void){
 	float ht, vh, pd, td, sb, sl;
 
 	printf("%s", "Informe o valor da hora trabalhada :");
+	scanf("%f", &vh);
+	printf("%s", "Informe as horas trabalhadas :");
 	scanf("%f", &ht);
+	printf("%s", "Informe o percentual desconto :");
+	scanf("%f", &pd);
 
 
-	printf("%.2f\n", ht);
+
+	printf("Horas trabalhadas : %.2f\n", ht);
 
 	return 0;
 }
