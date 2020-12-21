@@ -1,0 +1,41 @@
+### USANDO VARIÁVEIS GLOBAIS
+
+	Até agora apenas variáveis locais, declaradas no corpo da função main, foram utili-
+	zadas. Quando uma variável é declarada no corpo de uma função, ela é local a essa
+	função: não pode ser referida fora dela.
+	Para permitir que uma função utilize variáveis cujo valor foi definido em outra
+	função, costuma-se passar esse valor eomo argumento. Essa é a solução adotada nas
+	chamadas às funções po" e sqrt, par exemplo. Outra solução é declarar a variável
+	como global: disponível para todas as funções do programa.
+	As variáveis locais são removidas tão logo termina a execução da função na qual
+	são declaradas. Por outro lado, as variáveis globais permanecem em memória durante
+	toda a execução do programa. Uma variável é global quando está declarada fora do
+	corpo de qualquer função.
+	As variáveis globais são usadas neste capítulo para permitir o compartilhamento
+	de dados entre funções, porque a opção mais adequada requer o uso de argumentos e
+	a declaração de funções parametrizadas
+
+	#include <stdio.b>
+ int i;
+ void lordadoa(void) {
+	printf ("Digite um valor int;eiro: ");
+	seanf("%d", lx);
+.a
+&
+7
+s
+void !mpdados(void) {
+prlntt(•dobro • Y.d\n•, (2 "x ));
+w lnt oaln(vold) {
+lerdadoa () ;
+lmpdadoa ();
+prlntf (• fia programa \n•);
+retura O;
+li
+12
+13
+l l
+IS
+}
+
+

@@ -1,0 +1,70 @@
+## TRABALHANDO COM CONDICIONAIS EM C ##
+
+# IF
+	if(condição){
+		bloco comandos
+	}
+	ou
+	if(condicao)
+		comando único
+
+
+# IF ELSE
+	if(condição){
+		comandos para condição verdadeira
+	}
+	else{
+		comandos para condição falsa
+	}
+
+
+
+# ANINHAMENTO IF ELSE
+	if (N1 == N2)
+    	printf("Os numeros sao iguais!");
+  	else
+    	if (N1 > N2)
+      		printf("O maior valor e = %d", N1);
+    	else
+      		printf("O maior valor e = %d", N2);
+
+
+
+# CONDIÇÃO TERNÁRIA
+	numero >= 0 ? numero++ : numero--;
+
+
+# SWITCH (CASE)
+	switch (expressao){
+	   case valor1:
+	       comandos;
+	       break;
+	   case valor2:
+	       comandos;
+	       break;
+	   ...   
+	   default:
+	        comandos;
+	}
+
+	switch (resp){
+	   case 1:
+	     printf("Voce selecionou a opcao %d", resp);
+	   	 break;
+
+	   case 2:
+	     printf("Voce selecionou a opcao %d", resp);
+	     break;
+
+	   case 3:
+	     printf("Voce selecionou a opcao %d", resp);
+	     break;
+	   
+	   default:
+	      printf("Voce selecionou uma opcao deiferent de 1, 2 ou 3 --> %d", resp);
+	}
+	obs: variável de controle deve ser char ou int
+
+
+	
+

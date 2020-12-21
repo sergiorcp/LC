@@ -1,0 +1,21 @@
+## VETORES E MATRIZES EM C ##
+
+# DECLARAÇÃO VETOR
+	float notas[10];
+	int numeros[5] = {10, 20, 30, 40, 50};
+	int valores[] = {3,5,7};
+
+	- Inicia sempre com índice 0
+	- Tamanho do vetor : int tamanho = strlen(notas);
+	- Último índice : (tamanho - 1)
+
+# DECLARAÇÃO MATRIZ
+	float Media[5][2];
+
+	int matriz3d [4][4][4]
+	primeira posição da matriz: 0,0,0
+	última posição da matriz: 3,3,3
+
+	int m[2][2] = {1,2,3,4};
+	ou
+	int m[2][2] = {{1,2},{3,4}};

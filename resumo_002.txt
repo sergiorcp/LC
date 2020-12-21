@@ -1,0 +1,50 @@
+# CONSTANTES
+	ex: const int NRO = 10;  -> Define variável na memória que não pode ser alterado
+	ou
+	ex: #define PI 3.1415    -> Funciona substituindo a ocorrência no programa pelo valor
+
+# OPERADORES ARITMÉTICOS
+	SOMA a+b,  SUBTRAÇÃO a-b,  MULTIPLICAÇÃO a*b, DIVISÃO a/b, RESTO DA DIVISÃO a%b(só funciona com inteiros)
+
+# OPERADORES RELACIONAIS
+	== - igualdade
+	!= - diferença
+	>  - maior que
+	<  - menor que
+	>= - maior ou igual a
+	<= - menor ou igual a
+
+# OPERADORES LÓGICOS
+    &&       AND
+    ||       OR
+    !        NOT (operador de negação)	
+
+
+# CÁLCULO DO VALOR BOOLEANO
+	Toda expressão booleana (= expressão lógica) em C tem valor 0 ou 1. Por exemplo, o valor da expressão
+	tt == 3	-> é 1 se tt vale 3 e é 0 se tt não vale 3.
+
+# SIMULANDO TIPO BOOLEANO EM C
+	Tipo booleano é muito comum em linguagens modernas como Java (boolean) e C++ (bool) como ele podemos ter variáveis e constantes que possuem apenas os valores
+	Verdadeiro (1) e Falso (0), entretanto a linguagem de programação C não possui um tipo para representar valores booleanos. Porém, há formas de simular este tipo. Nesta dica mostrarei como simular o tipo boolean de uma maneira muito simples e prática.
+	A Idéia
+	Para simular o tipo booleano vamos utilizar enumerações e a palavra reservada typedef. Primeiro, criaremos uma enumeração chamada boolean que assuma os valores true e false. Em seguida, utilizaremos o typedef para permitir a declaração de variáveis do tipo enum boolean como se fossem um tipo primitivo qualquer.
+
+	O Código
+	// Criando a enumeração:
+	enum boolean {
+	    true = 1, false = 0
+	};
+	// Permitindo a sua declaração como um tipo qualquer:
+	typedef  enum boolean  bool;
+	 
+	// Agora podemos escrever e compilar os códigos como:
+	int main () {
+	     
+	    bool b = true;
+	    if (b) {
+	        b = false;
+	    }
+	 
+	    return 0;
+	}

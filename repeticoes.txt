@@ -1,0 +1,68 @@
+## ESTRUTURAS DE REPETIÇÃO EM C ##
+
+# WHILE
+	while(condição){
+		bloco comandos
+	}
+
+
+# FOR
+	for (comandos de inicialização; condição de teste; incremento/decremento){
+		// comandos a serem repetidos
+		// comandos a serem repetidos
+	}
+	for(contador = 1; contador <= 10; contador++){
+    	printf("%d ", contador);
+  	}
+
+
+# DO WHILE
+	do{
+    printf("Digite a primeira nota: ");
+    scanf("%f",&nota1);
+    printf("Digite a segunda nota: ");
+    scanf("%f",&nota2);
+    
+    media = (nota1 + nota2)/2;
+    printf("Media do aluno = %f\n",media);
+    
+    printf("Digite 1 para continuar ou 2 para sair\n");
+    scanf("%d", &resp);
+  
+  }while (resp==1);
+
+
+# ANINHAMENTO DE REPETIÇÃO
+
+
+
+#BREAK
+	O comando break encerra o laço no ponto em que for executado. 
+
+#CONTINUE
+	O comando continue desvia o fluxo para a próxima interação da repetição
+
+#GOTO
+	O comando goto realiza o desvio da execução para o comando que possuir o label indicado. Apesar de existir este comando, todas as boas técnicas de programação dizem que seu uso deve ser evitado.
+	ex:
+	while(1){
+
+      printf ("Valores:");
+      scanf ("%d %d", &iValor_a, &iValor_b);
+      if (iValor_a == 0){
+         goto fim;
+      }
+ 
+      if (iValor_b == 0) /* Caso seja informado 0 para iValor_b o programa é desviado para o label erro através do comando goto */
+      {
+         goto erro;
+      }
+      printf ("Divisao : %d\n", iValor_a / iValor_b);
+   }
+ 
+	erro: /* executando somente se for informado valor 0 para iValor_b */
+   	printf ("Divisao por zero\n");
+ 
+	fim: /* esta linha é executada sempre, pois todos os comandos após um label goto serão interpretados.
+        	Mesmo que faça parte de outro label goto */
+   	printf ("Fim da execucao do programa\n");

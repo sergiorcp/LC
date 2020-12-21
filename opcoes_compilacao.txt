@@ -1,0 +1,15 @@
+#### OPÇÕES DE COMPILAÇÃO ####
+
+# Especificando o padrão a ser usado
+	Alguns compiladores podem trabalhar com vários padrões para uma mesma linguagem.
+	Esse é o caso do compilador gcc, que adota como norma um padrão próprio, estenden-
+	do o padrão ISO/IEC 9899: 1990. Para fazer o gcc adotar o padrão ISO/IEC 9899: 1999
+	deve-se usar a opção de compilação -std=c99. (Para versões do compilador que imple-
+	mentam o padrão de 2011, deve·se usar a opção -std=c11). Recomeoda·se também que
+	as compilações sejam realizadas com as opções -Wall, para forçar a produção de todos
+	os avisos do compilador, e -pedantic, para que os diagnósticos especificados pelo pa-
+	drão sejam fornecidos. Os comandos de compilação devem ser da forma:
+	$> gcc prog.c -o prg_exem aux.o ent_sa.i.s -std=c99 -Wall -pedantic -lm
+
+	A opção - lm é necessária para indicar que a biblioteca libcl,a (que contém o código-objeto das funções sqrt e
+    pow) dev,e ser usada na etapa de ligação.

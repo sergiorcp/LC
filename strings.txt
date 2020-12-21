@@ -1,0 +1,37 @@
+## TRABALHANDO COM STRINGS EM C ##
+
+#DECLARAÇÃO
+	char palavra[20];
+	char nome[10] = "João";
+
+	nome[0] = 'j';
+
+#LEITURA
+	scanf("%c ou %s", palavra);
+	
+	Quando se usa vetores/matrizes, não é necessário usar & na função scanf() para indicar o endereço de memória que se quer armazenar. O nome da matriz já é seu endereço inicial.
+
+	Dessa forma, a expressão scanf("%c ou %s", palavra) é equivalente a scanf("%c ou %s", &palavra[0])
+
+	Scanf() não é ideal para ler um vetor de caracteres porque não aceita espaço. Se houver espaço no vetor, scanf vai ignorar e finalizar a leitura no espaço, o que é um efeito indesejado quando se trata de strings.
+	Para resolver isso, utilizamos fgets() que é uma função para leitura que aceita espaços em strings.
+
+	fgets(variável, tamanho, stdin)
+	ex: fgets(palavra, 20, stdin);
+
+	Assim como printf() e scanf() são complementos uma da outra, fgets() possui seu complemento que é puts
+	ex:
+		puts("Informe seu nome ....: ");
+		fgets(palavra, 20, stdin);
+
+# UTILIZANDO FFLUSH()
+	Comando de limpeza de buffer. Utilizamos antes da leitura com fgets para limpar o buffer do objeto de entrada, no caso o stdin que por padrão é o teclado, para evitar que alguma sujeira seja gravada na leitura.
+	stdin -> é o stream a ser limpo. Stream de entrada padrão que normalmente é o teclado.
+	ex:
+		puts("Informe seu nome ....: ");
+		fflush(stdin);
+		fgets(palavra, 20, stdin);
+
+
+# STRINGS <string.h>
+	-
