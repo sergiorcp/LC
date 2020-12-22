@@ -1,0 +1,29 @@
+
+
+
+
+
+# ENUM - Como se fosse uma lista de constantes.  Um domínio de valores pré-definidos.
+			possuem índices como em arrays começando por zero.
+
+enum nome{};
+
+exemplo: 
+	enum semana{segunda, terça, quarta, quinta, sexta, sabado, domingo};
+
+
+
+	enum semana s;
+
+	s = quarta;
+
+
+Podemos definir índices específicos para as constantes
+
+enum semana{Domingo =1, segunda, terça, quarta=7, quinta, sexta, sabado};
+
+
+
+
+
+

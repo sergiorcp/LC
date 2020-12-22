@@ -1,0 +1,30 @@
+### UNIÃO EM LINGUAGEM C ###
+
+# DECLARAÇÃO
+	union nome_uniao{
+		tipo1 nome1;
+		tipo2 nome2;
+		....
+		tipoN nomeN;
+	};
+
+
+	ex:
+		union tipo{
+			short int x;
+			unsigned char c;
+		};
+
+# ACESSO
+	union tipo u;
+
+	u.x = 5;
+	u.c = 'a';
+
+## DIFERENÇAS COM STRUCT 
+	struct -> Aloca memória para cada tipo que compoem sua estrutura;
+
+	union -> Espaço para armazenar apenas o maior tipo que a compoem, memória compartilhada;
+
+
+	

@@ -1,0 +1,18 @@
+
+
+
+
+## TYPEDEF - cria um apelido para um tipo conhecido
+
+
+TYPEDEF TIPO_CONHECIDO APELIDO;
+
+typedef int inteiro;
+
+
+int x = 10;
+inteiro y = 20;
+
+
+
+

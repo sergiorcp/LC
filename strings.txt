@@ -34,4 +34,23 @@
 
 
 # STRINGS <string.h>
-	-
+	-strcmp()   -> compara duas strings
+	retorno > 0 -> Se a primeira string seja maior que a segunda
+	retorno = 0 -> Caso a primeira seja igual a segunda
+	retorno < 0 -> Caso a primeira seja menor que a segunda
+	-strcpy(p1, p2) -> Copia a segunda para a primeira
+
+	strlen() - tamanho de uma string
+
+	
+
+	strcat() - concatena duas strings
+
+
+
+# FUNÇÃO GETCHAR() -> Lê do terminal um caracter e devolve o código ASCII
+	char letra;
+	letra = getchar();
+	printf("Letra digitada %c \n", letra);
+	printf("Cod tabela ASCII %d \n", letra);
+

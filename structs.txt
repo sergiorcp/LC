@@ -1,0 +1,67 @@
+### ESTRUTURA REGISTRO EM LINGUAGEM C - STRUCTS  ###
+
+# DECLARAÇÃO - Geralmente declarada na global pois vai ser um novo tipo reutilizável.
+	struct nome_estrutura{
+
+		tipo1 nome1;
+		tipo2 nome2;
+		....
+		tipon nomen;
+	};
+
+	ex: struct pessoa{
+		char nome[50], rua[50];
+		int idade, numero;
+	};
+
+# ACESSO
+	Primeiro criamos uma referência para o acesso:
+	struct pessoa p;
+	p.idade = 31;
+
+	scanf("%d", &p.idade);
+	gets(p.nome);
+
+# INICIALIZANDO STRUCTS
+	struct pessoa p1 = {"Ricardo", "Rua projetada 1", 31, 101};
+
+	struct pessoa p2;
+
+	p2 = p1; -> Copia os dados de uma struct em outra do mesmo tipo.
+
+	Não é permitido atribuir structs de tipos diferentes mesmo que possuam os mesmos campos.
+
+
+# ARRAY DE STRUCTS
+	struct pessoa p4[4];
+	p[0].idade = 32;
+
+
+# ANINHAMENTO DE STRUCTS
+	struct endereco{
+
+		char rua[50];
+		int numero;
+
+	};
+
+	struct pessoa{
+
+		char nome[50];
+		int idade;
+		struct endereco end;
+
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
